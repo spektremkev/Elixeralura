@@ -1,5 +1,14 @@
 defmodule MeuModulo do
-  def ola-mundo  do
-    IO.puts "Olá Mundo"
+  import IO, only: [puts]
+  import Kernel, except: [inspect: 1]
+
+  def ola_mundo  do
+    inspect ("Olá Mundo")
+  end
+
+  def inspect(parametro)  do
+    puts ("Começando a inspeção")
+    puts (parametro)
+    puts ("Fim da inspeção")
   end
 end
