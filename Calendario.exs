@@ -40,4 +40,5 @@ defmodule MeuModulo.Caledario do
   def abreviação_dia_semana4(:Sexta), do: "Sex"
   def abreviação_dia_semana4(:Sabado), do: "Sab"
   def abreviação_dia_semana4(:Domingi), do: "Domingo"
+
 end
